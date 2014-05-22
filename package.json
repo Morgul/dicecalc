@@ -1,0 +1,11 @@
+{
+  "name": "dicecalc",
+  "version": "0.1.0",
+  "description": "Calculates the probability of EotE style dice rolls.",
+  "main": "calc.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Christopher S. Case <chris.case@g33xnexus.com>",
+  "license": "MIT"
+}
