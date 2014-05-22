@@ -13,12 +13,18 @@ var dice_table = require('./lib/dice_table');
 
 console.log('EotE Dice Probability Calculator, v%s\n', package.version);
 
-var results = enumerator.enumerateDicePool(['proficiency', 'proficiency', 'difficulty', 'difficulty', 'difficulty', 'difficulty']);
-//var results = enumerator.enumerateDicePool(['proficiency', 'ability', 'ability', 'difficulty', 'difficulty']);
-//var results = enumerator.enumerateDicePool(['proficiency', 'ability', 'difficulty']);
-//console.log('Got Results:', results);
-//console.log("%s results.", results.length);
+//----------------------------------------------------------------------------------------------------------------------
 
+var results = enumerator.enumerateDicePool([
+    'proficiency',
+    'proficiency',
+    'difficulty',
+    'difficulty',
+    'difficulty',
+    'difficulty'
+]);
+
+//----------------------------------------------------------------------------------------------------------------------
 
 var outcomes = _.map(results, dice_table.Outcome);
 //console.log(outcomes);
